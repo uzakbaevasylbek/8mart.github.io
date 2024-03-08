@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поздравление с 8 марта</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #ff4081;
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff4081;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Дорогие дамы!</h1>
+    <p>Поздравляем вас с восьмым марта!</p>
+    <p>Пусть этот день будет полон радости, улыбок и весеннего настроения.</p>
+    
+    <button onclick="показатьПодпись()">Подписаться с любовью</button>
+
+    <p id="подпись" style="display:none;">С любовью и уважением,<br>Ваше имя</p>
+
+    <script>
+        function показатьПодпись() {
+            document.getElementById('подпись').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
